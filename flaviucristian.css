@@ -38,3 +38,52 @@ body {
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
 }
+
+.header-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-menu>div {
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.header {
+    overflow: hidden;
+    padding: 20px 10px;
+    border-radius: 25px;
+}
+
+.header a {
+    float: left;
+    color: black;
+    padding: 12px;
+    font-size: 18px;
+}
+
+.header a.pages-title {
+    text-align: center;
+    color: black;
+    font-size: 60px;
+    font-family: 'Allura';
+    font-style: italic;
+}
+
+.header-right {
+    float: right;
+    padding: 13px 60px;
+    background-color: transparent;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    text-align: center;
+    background-color: transparent;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
