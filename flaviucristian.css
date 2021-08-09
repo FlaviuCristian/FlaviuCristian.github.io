@@ -11,8 +11,9 @@ body {
     font-style: italic;
 }
 
-.home-quote {
+#quote {
     text-align: center;
+    font-style: italic;
     color: black;
     font-size: 20px;
 }
