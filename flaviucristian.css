@@ -4,6 +4,7 @@ body {
 }
 
 .home-title {
+    padding-top: 100px;
     text-align: center;
     color: black;
     font-size: 130px;
