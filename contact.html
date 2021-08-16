@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Contact</title>
     <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Syne+Mono&display=swap">
     <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
@@ -24,6 +24,43 @@
     </div>
 
     <h1 style="cursor:pointer;" onclick="location.href='contact.html' ;">Contact</h1>
+
+
+    <section class="contact">
+        <article class="contact text">
+            <p class="contact-text">If you have seen something interesting on this website and it is suitable for you or your business, <b>Contact</b> me.</p>
+
+        </article>
+
+        <article class="contact form">
+            <form action="https://formspree.io/f/myylbgdp" method="POST" target="_blank">
+
+                <label for="fname">First Name</label>
+                <input type="text" name="firstname" placeholder="Your First Name.." required>
+
+                <label for="lname">Last Name</label>
+                <input type="text" name="lastname" placeholder="Your Last Name.." required>
+
+                <br>
+                <br>
+
+                <label>Your email:</label>
+                <input type="email" name="_replyto" placeholder="Your e-mail here.." required>
+
+                <br>
+                <br>
+
+                <label for="subject">Subject</label>
+                <br>
+                <textarea id="subject" name="subject" placeholder="Write something.." required></textarea>
+
+                <br>
+
+                <button type="submit">Send</button>
+            </form>
+
+        </article>
+    </section>
 
 
 </body>

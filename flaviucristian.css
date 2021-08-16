@@ -89,3 +89,25 @@ h1 {
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
 }
+
+.contact {
+    display: flex;
+}
+
+.text {
+    width: 40%;
+    padding: 0px 50px 50px 20px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form {
+    width: 60%;
+    padding: 20px 50px 50px 20px;
+}
+
+#subject {
+    height: 200px;
+    width: 100%;
+    border: 1px solid #4CAF50;
+}
