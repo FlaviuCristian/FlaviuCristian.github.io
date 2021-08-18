@@ -111,3 +111,38 @@ h1 {
     width: 100%;
     border: 1px solid #4CAF50;
 }
+
+.mywork {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    height: 350px;
+}
+
+.project {
+    border: 1px solid black;
+    width: 30%;
+}
+
+.projects {
+    flex: 50%;
+    padding: 5px;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.img-projects:hover {
+    transform: scale(1.03);
+}
+
+.img-projects {
+    border-radius: 15px;
+}
+
+.title-projects {
+    color: black;
+    font-weight: bold;
+    font-size: 32px;
+    font-family: 'Allura';
+    font-style: italic;
+}
