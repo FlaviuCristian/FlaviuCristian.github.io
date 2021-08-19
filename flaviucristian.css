@@ -21,9 +21,7 @@ body {
 
 .menu {
     text-align: center;
-    vertical-align: 20%;
     padding: 50px;
-    transition: transform .2s;
 }
 
 .btn-home {
@@ -92,6 +90,7 @@ h1 {
 
 .contact {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .text {
@@ -102,7 +101,7 @@ h1 {
 }
 
 .form {
-    width: 60%;
+    width: 40%;
     padding: 20px 50px 50px 20px;
 }
 
@@ -114,18 +113,11 @@ h1 {
 
 .mywork {
     display: flex;
-    justify-content: space-around;
-    width: auto;
-    height: 350px;
-}
-
-.project {
-    border: 1px solid black;
-    width: 30%;
+    flex-wrap: wrap;
 }
 
 .projects {
-    flex: 50%;
+    width: 500px;
     padding: 5px;
     margin-right: 60px;
     margin-left: 60px;
@@ -145,4 +137,26 @@ h1 {
     font-size: 32px;
     font-family: 'Allura';
     font-style: italic;
+}
+
+.resume {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px 0 grey;
+}
+
+.header1 {
+    overflow: hidden;
+    background-image: url('/resources/images/background_header.JPG');
+    position: fixed;
+    width: 100%;
+    top: 0%;
+}
+
+.header1 a {
+    font-size: 17px;
 }
