@@ -73,6 +73,14 @@ body {
     font-style: italic;
 }
 
+.header1 a.pages-title {
+    text-align: center;
+    color: black;
+    font-size: 60px;
+    font-family: 'Allura';
+    font-style: italic;
+}
+
 .header-right {
     float: right;
     padding: 13px 60px;
@@ -157,6 +165,6 @@ h1 {
     top: 0%;
 }
 
-.header1 a {
+.header-right a {
     font-size: 17px;
 }
