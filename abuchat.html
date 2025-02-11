@@ -1,0 +1,61 @@
+<div id="chat-container">
+    <div id="chat-box"></div>
+    <input type="text" id="user-input" placeholder="Scrie un mesaj..." />
+    <button onclick="sendMessage()">Trimite</button>
+</div>
+
+<style>
+    #chat-container {
+        width: 300px;
+        margin: auto;
+        text-align: center;
+    }
+    
+    #chat-box {
+        height: 300px;
+        overflow-y: scroll;
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+    
+    input {
+        width: 80%;
+        padding: 5px;
+    }
+    
+    button {
+        padding: 5px 10px;
+    }
+</style>
+
+<script>
+    async function sendMessage() {
+        let userInput = document.getElementById("user-input").value;
+        let chatBox = document.getElementById("chat-box");
+
+        if (!userInput) return;
+
+        // Adaugă mesajul utilizatorului în chat
+        chatBox.innerHTML += `<p><strong>Tu:</strong> ${userInput}</p>`;
+
+        // Trimite mesajul la backend (Render)
+        let response = await fetch("https://chatbot-backend.onrender.com/chat", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                message: userInput
+            })
+        });
+
+        let data = await response.json();
+        let botMessage = data.response || "Eroare la chatbot.";
+
+        // Afișează răspunsul chatbot-ului
+        chatBox.innerHTML += `<p><strong>Chatbot:</strong> ${botMessage}</p>`;
+
+        // Golește input-ul
+        document.getElementById("user-input").value = "";
+    }
+</script>
